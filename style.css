@@ -1,0 +1,130 @@
+eset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #bcbdbd, #03a7bd);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #03a7bd;
+}
+
+/* Entrada de tarefa */
+.task-input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #03a7bd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.task-input input:focus {
+    border-color: #03a7bd;
+    box-shadow: 0px 0px 8px rgba(39, 164, 248, 0.5);
+}
+
+.task-input button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background: #03a7bd;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.task-input button:hover {
+    background: #03a7bd;
+}
+
+/* Lista de tarefas */
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+li.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-text {
+    flex: 1;
+    cursor: pointer;
+}
+
+/* Botões */
+.task-buttons button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background 0.3s;
+}
+
+.task-buttons button.edit {
+    background: #ffce67;
+    color: #333;
+}
+
+.task-buttons button.edit:hover {
+    background: #ffc34c;
+}
+
+.task-buttons button.delete {
+    background: #03a7bd;
+    color: #fff;
+}
+
+.task-buttons button.delete:hover {
+    background: #03a7bd;
+}
